@@ -1,0 +1,20 @@
+.header {
+  background-color: var(--primary-dark-blue-600);
+  background-image: url(../../images/bg-curvy-mobile.svg), 
+                    linear-gradient(180deg, var(--primary-dark-blue-500) 68%, var(--primary-dark-blue-600) 32%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 60%;
+
+  @mixin screen-size-md {
+    background-image: url(../../images/bg-curvy-mobile.svg), 
+                    linear-gradient(180deg, var(--primary-dark-blue-500) 80%, var(--primary-dark-blue-600) 20%);
+    background-position: center 75%;
+  }
+
+  @mixin screen-size-lg {
+    background-image: url(../../images/bg-curvy-desktop.svg),
+                    linear-gradient(180deg, var(--primary-dark-blue-500), var(--primary-dark-blue-500));
+    background-position: bottom center, center;
+  }
+}

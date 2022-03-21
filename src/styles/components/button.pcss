@@ -1,0 +1,33 @@
+.button {
+  font-size: .875rem;
+  display: inline-block;
+  background-color: white;
+  color: var(--primary-dark-blue-600);
+  padding: 1.143em 5.714em;
+  border-radius: 10em;
+  
+  &__primary {
+    font-weight: 700;
+    color: var(--neutral-white);
+    background-image: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: var(--neutral-white);
+      opacity: 0;
+      z-index: 10;
+      pointer-events: none;
+      transition: opacity 200ms ease-out;
+    }
+
+    &:hover {
+      &::before {
+        opacity: .46;
+      }
+    }
+  }
+}

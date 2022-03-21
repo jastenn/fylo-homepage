@@ -1,0 +1,24 @@
+$screen-md: 600px;
+$screen-lg: 900px;
+@define-mixin fallback-clamp $property , $sm, $md, $lg{
+  $(property): $(sm);
+  @mixin screen-size-md {
+    $(property): $(md)
+  }
+
+  @mixin screen-size-lg {
+    $(property): $(lg)
+  }
+}
+
+@define-mixin screen-size-md {
+  @media (min-width: $screen-md) {
+    @mixin-content;
+  }
+}
+
+@define-mixin screen-size-lg {
+  @media (min-width: $screen-lg) {
+    @mixin-content;
+  }
+}

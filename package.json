@@ -1,0 +1,19 @@
+{
+  "name": "fylo-dark-theme",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-mixins": "^9.0.2",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}

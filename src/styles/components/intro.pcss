@@ -1,0 +1,28 @@
+.intro {
+  text-align: center;
+  line-height: 1.5;
+  max-width: 44.88rem;
+  margin: clamp(1.5rem, 6vw, 5.56rem) auto;
+
+
+  &__illustration {
+    margin-bottom: 1.88rem;
+  }
+
+  &__heading {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: .75em;
+  }
+
+  &__content {
+    font-size: clamp(.875rem, 3vw, 1.25rem);
+    margin-bottom: 2.20em;
+    opacity: .75;
+  }
+
+  &__cta {
+    @mixin screen-size-md {
+      padding: 1.25rem 5.875rem;
+    }
+  }
+}

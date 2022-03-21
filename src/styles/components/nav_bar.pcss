@@ -23,7 +23,9 @@
   &__link {
     color: rgba(255, 255, 255, .75);
     
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: none;
       color: var(--neutral-white);
       text-decoration: underline;
     }

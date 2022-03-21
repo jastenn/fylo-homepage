@@ -1,0 +1,44 @@
+.testimonial {
+  font-size: .75rem;
+  background-color: var(--primary-dark-blue-400);
+  border-radius: .5em;
+  padding: clamp(1.69rem, 4vw ,2.63rem) clamp(1.25rem, 3vw, 2rem);
+
+  &__testimony {
+    margin-bottom: clamp(1em, 2vw, 1.5em);
+    opacity: var(--font-body-opacity);
+    font-size: clamp(.75rem, 1.875vw, .875rem);
+
+    @mixin screen-size-md {
+      opacity: 1;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    &-image {
+      width: 1.63rem;
+      border-radius: 10em;
+      aspect-ratio: 1 / 1;
+    }
+
+    &-profile {
+      font-size: 0.625rem;
+      margin-left: 1em;
+
+      cite {
+        display: block;
+        text-transform: unset;
+        font-size: .75rem;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .job-title {
+        opacity: var(--font-body-opacity);
+      }
+    }
+  }
+}

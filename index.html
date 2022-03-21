@@ -57,12 +57,16 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="container">
+    <div class="container">
+      <main class="main">
         <section class="sales-points">
           <ul class="sales-points__container">
             <li class="sales-point">
-              <img class="sales-point__icon" src="/src/images/icon-access-anywhere.svg" alt="" />
+              <img
+                class="sales-point__icon"
+                src="/src/images/icon-access-anywhere.svg"
+                alt=""
+              />
               <h4 class="sales-point__heading">Access your files, anywhere</h4>
               <p class="sales-point__description">
                 The ability to use a smartphone, tablet, or computer to access
@@ -71,7 +75,11 @@
             </li>
 
             <li class="sales-point">
-              <img class="sales-point__icon" src="/src/images/icon-security.svg" alt="" />
+              <img
+                class="sales-point__icon"
+                src="/src/images/icon-security.svg"
+                alt=""
+              />
               <h4 class="sales-point__heading">Security you can trust</h4>
               <p class="sales-point__description">
                 2-factor authentication and user-controlled encryption are just
@@ -81,7 +89,11 @@
             </li>
 
             <li class="sales-point">
-              <img class="sales-point__icon" src="/src/images/icon-collaboration.svg" alt="" />
+              <img
+                class="sales-point__icon"
+                src="/src/images/icon-collaboration.svg"
+                alt=""
+              />
               <h4 class="sales-point__heading">Real-time collaboration</h4>
               <p class="sales-point__description">
                 Securely share files and folders with friends, family and
@@ -91,7 +103,11 @@
             </li>
 
             <li class="sales-point">
-              <img class="sales-point__icon" src="/src/images/icon-any-file.svg" alt="" />
+              <img
+                class="sales-point__icon"
+                src="/src/images/icon-any-file.svg"
+                alt=""
+              />
               <h4 class="sales-point__heading">Store any type of file</h4>
               <p class="sales-point__description">
                 Whether you're sharing holidays photos or work documents, Fylo
@@ -101,43 +117,154 @@
             </li>
           </ul>
         </section>
-      </div>
-    </main>
-    <!-- <section class="testimonials">
 
-    </section> -->
+        <section class="overview">
+          <div class="overview__image">
+            <img src="/src/images/illustration-stay-productive.png" alt="" />
+          </div>
+
+          <div class="overview__info">
+            <h2 class="overview__header">Stay productive, wherever you are</h2>
+            <div class="overview__description">
+              <p>
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p>
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required.
+              </p>
+            </div>
+
+            <a class="overview__link" href="#">
+              <span> See how Fylo works </span>
+
+              <!-- ARROW SVG -->
+              <svg
+                class="arrow-icon"
+                width="16"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <circle id="b" cx="6" cy="6" r="6" />
+                  <filter
+                    x="-25%"
+                    y="-25%"
+                    width="150%"
+                    height="150%"
+                    filterUnits="objectBoundingBox"
+                    id="a"
+                  >
+                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                    <feGaussianBlur
+                      stdDeviation="1"
+                      in="shadowOffsetOuter1"
+                      result="shadowBlurOuter1"
+                    />
+                    <feColorMatrix
+                      values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                      in="shadowBlurOuter1"
+                    />
+                  </filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(2 2)">
+                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                    <use fill="currentColor" xlink:href="#b" />
+                  </g>
+                  <path
+                    d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                    fill="#1B2330"
+                    id="arrow"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <section class="testimonials">
+        <ul class="testimonials__container">
+          <li>
+            <figure class="testimonial">
+              <blockquote class="testimonial__testimony">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+
+              <figcaption class="testimonial__info">
+                <img
+                  class="testimonial__info-image"
+                  src="/src/images/profile-1.jpg"
+                  alt=""
+                />
+                <div class="testimonial__info-profile">
+                  <cite>Satish Patel</cite>
+                  <span class="job-title"> Founder & CEO, Huddle </span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="testimonial">
+              <blockquote class="testimonial__testimony">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+
+              <figcaption class="testimonial__info">
+                <img
+                  class="testimonial__info-image"
+                  src="/src/images/profile-2.jpg"
+                  alt=""
+                />
+                <div class="testimonial__info-profile">
+                  <cite> Bruce McKenzie </cite>
+                  <span class="job-title"> Founder & CEO, Huddle </span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="testimonial">
+              <blockquote class="testimonial__testimony">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+
+              <figcaption class="testimonial__info">
+                <img
+                  class="testimonial__info-image"
+                  src="/src/images/profile-3.jpg"
+                  alt=""
+                />
+                <div class="testimonial__info-profile">
+                  <cite> Iva Boyd </cite>
+                  <span class="job-title"> Founder & CEO, Huddle </span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <!-- 
 
 
 
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
-  storage needs.
-
-  Securely share files and folders with friends, family and colleagues for live collaboration. No email 
-  attachments required.
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-  become a well-oiled collaboration machine.
-
-  Satish Patel
   Founder & CEO, Huddle
 
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-  become a well-oiled collaboration machine.
 
-  Bruce McKenzie
-  Founder & CEO, Huddle
-
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-  become a well-oiled collaboration machine.
-
-  Iva Boyd
   Founder & CEO, Huddle
 
   Get early access today

@@ -1,0 +1,19 @@
+.sales-points {
+  margin: 7.88rem 0;
+  &__container {
+    display: grid;
+    gap: 5rem;
+  
+    @mixin screen-size-md {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem 3rem;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @mixin screen-size-lg {
+      gap: 6rem 2rem;
+
+    }
+  }
+}

@@ -31,21 +31,27 @@
     } 
   }
 
-  &__email {
+  .email-control {
+    margin-bottom: 2em;
     display: block;
     width: 100%;
     max-width: 30rem;
-    font-size: 0.75rem;
-    padding: 1.5em 2.17em;
-    border-radius: 10em;
-    border: none;
-    margin-bottom: 2em;
 
     @mixin screen-size-md {
       /* font-size: .875rem; */
       width: 70%;
       margin-bottom: 0;
     }
+  }
+
+  &__email {
+    display: block;
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 1.5em 2.17em;
+    border-radius: 10em;
+    border: none;
+
 
     &::placeholder {
       opacity: .75;
@@ -59,11 +65,13 @@
 
   &__submit {
     width: 100%;
+    padding: 1.25em 2.17em;
+
     @mixin screen-size-md {
       margin-left: 1rem;
-      width: 30%;
+      padding: 0 1.25rem;
       max-width: 12.44rem;
-      padding: 0 1rem;
+      width: 30%;
       /* padding: inherit 0 inherit 0; */
     }
   }

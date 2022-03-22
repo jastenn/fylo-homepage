@@ -8,10 +8,10 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        postcssAutoprefixer,
-        postcssMixins,
+        postcssSimpleVars,
         postcssNested,
-        postcssSimpleVars
+        postcssMixins,
+        postcssAutoprefixer,
       ]
     }
   }

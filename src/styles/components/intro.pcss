@@ -2,7 +2,10 @@
   text-align: center;
   line-height: 1.5;
   max-width: 44.88rem;
-  margin: clamp(1.5rem, 6vw, 5.56rem) auto;
+  margin: 1.5rem auto;
+  @mixin screen-size-md {
+    margin: 0 auto;
+  }
 
 
   &__illustration {

@@ -16,6 +16,10 @@
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
 
+    <script
+      src="https://kit.fontawesome.com/244656381e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
@@ -52,7 +56,7 @@
             family, and co-workers.
           </p>
 
-          <button class="intro__cta button button__primary">Get Started</button>
+          <button class="intro__cta button button--primary">Get Started</button>
         </div>
       </div>
     </header>
@@ -67,7 +71,7 @@
                 src="/src/images/icon-access-anywhere.svg"
                 alt=""
               />
-              <h4 class="sales-point__heading">Access your files, anywhere</h4>
+              <h4 class="sales-point__header">Access your files, anywhere</h4>
               <p class="sales-point__description">
                 The ability to use a smartphone, tablet, or computer to access
                 your account means your files follow you everywhere.
@@ -80,7 +84,7 @@
                 src="/src/images/icon-security.svg"
                 alt=""
               />
-              <h4 class="sales-point__heading">Security you can trust</h4>
+              <h4 class="sales-point__header">Security you can trust</h4>
               <p class="sales-point__description">
                 2-factor authentication and user-controlled encryption are just
                 a couple of the security features we allow to help secure your
@@ -94,7 +98,7 @@
                 src="/src/images/icon-collaboration.svg"
                 alt=""
               />
-              <h4 class="sales-point__heading">Real-time collaboration</h4>
+              <h4 class="sales-point__header">Real-time collaboration</h4>
               <p class="sales-point__description">
                 Securely share files and folders with friends, family and
                 colleagues for live collaboration. No email attachments
@@ -108,7 +112,7 @@
                 src="/src/images/icon-any-file.svg"
                 alt=""
               />
-              <h4 class="sales-point__heading">Store any type of file</h4>
+              <h4 class="sales-point__header">Store any type of file</h4>
               <p class="sales-point__description">
                 Whether you're sharing holidays photos or work documents, Fylo
                 has you covered allowing for all file types to be securely
@@ -256,47 +260,114 @@
           </li>
         </ul>
       </section>
+
+      <section class="get-started">
+        <h3 class="get-started__header">Get early access today</h3>
+        <p class="get-started__description">
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+
+        <form class="get-started__form">
+          <label for="email">Email</label>
+          <input
+            class="get-started__email"
+            name="email"
+            placeholder="email@example.com"
+            type="text"
+            id="email"
+          />
+          <button
+            class="get-started__submit button button--primary"
+            type="submit"
+          >
+            Get Started For Free
+          </button>
+        </form>
+      </section>
     </div>
 
-    <!-- 
+    <footer class="footer">
+      <div class="footer__container container">
+        <address class="footer__info">
+          <div class="footer__info--primary">
+            <img class="footer__logo" src="/src/images/logo.svg" alt="Fylo" />
+            <div class="footer__location with-icon">
+              <img class="icon" src="/src/images/icon-location.svg" alt="" />
+              <div class="value">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+                enim?
+              </div>
+            </div>
+          </div>
 
+          <div class="footer__info--secondary">
+            <div class="footer__phone with-icon">
+              <img class="icon" src="/src/images/icon-phone.svg" alt="" />
+              <a class="value" href="tel:+1-543-123-4567">+1-543-123-4567</a>
+            </div>
+            <div class="footer__email with-icon">
+              <img class="icon" src="/src/images/icon-email.svg" alt="" />
+              <a class="value" href="mailto:example.fylo.com"
+                >example.fylo.com</a
+              >
+            </div>
+          </div>
+        </address>
 
+        <div class="footer__links">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About Us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Jobs</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Press</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Blog</a>
+              </li>
+            </ul>
 
-  Founder & CEO, Huddle
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Terms</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Privacy</a>
+              </li>
+            </ul>
+          </nav>
 
+          <div class="footer__socials">
+            <a class="social-link" aria-label="facebook" href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="social-link" aria-label="twitter" href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="social-link" aria-label="instagram" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy -->
-
-    <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/jastenn" target="_blank">Justine Aviso</a>.
       </p>
     </footer>
+
     <script type="module" src="./src/main.ts"></script>
   </body>
 </html>

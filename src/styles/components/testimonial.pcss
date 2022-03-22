@@ -4,6 +4,9 @@
   border-radius: .5em;
   padding: clamp(1.69rem, 4vw ,2.63rem) clamp(1.25rem, 3vw, 2rem);
 
+  @mixin screen-size-lg {
+    padding: clamp(1.69rem, 3vw ,2.63rem) clamp(1.25rem, 2vw, 2rem);
+  }
   &__testimony {
     margin-bottom: clamp(1em, 2vw, 1.5em);
     opacity: var(--font-body-opacity);
